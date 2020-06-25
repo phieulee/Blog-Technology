@@ -1,0 +1,17 @@
+.background{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  padding-top: 150px;
+}
+.avatar{
+  width: 75px;
+  height: auto;
+  object-fit: cover;
+}
+.post{
+  margin-top: 100px;
+}

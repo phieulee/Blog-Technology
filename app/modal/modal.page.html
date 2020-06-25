@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-text color="warning">
+            List user liked
+            </ion-text>
+          </ion-col>
+          <ion-col (click)="dismiss();" style="text-align: right;">
+            <ion-text color="secondary">
+              Close
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list *ngFor="let likeusers of likeusers">
+    <ion-item *ngIf="likeusers.news_id == userid">
+      <ion-grid >
+        <ion-row>
+          <ion-col>
+            <ion-avatar>
+              <img src={{likeusers.avartar}}>
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            {{likeusers.username}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>
